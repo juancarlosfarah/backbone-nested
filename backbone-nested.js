@@ -340,7 +340,7 @@
 
     createAttrStr: function(attrPath){
       var attrStr = attrPath[0];
-      _.each(_.rest(attrPath), function(attr){
+      _.each(_.drop(attrPath), function(attr){
         attrStr += _.isNumber(attr) ? ('[' + attr + ']') : ('.' + attr);
       });
 
