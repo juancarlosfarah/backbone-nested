@@ -348,7 +348,7 @@
     },
 
     deepClone: function(obj){
-      return _.merge({}, obj);
+      return _.cloneDeep(obj);
     },
 
     walkPath: function(obj, attrPath, callback, scope){
